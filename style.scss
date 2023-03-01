@@ -1,0 +1,40 @@
+#faq{
+    .wrapper{
+        padding-top: 60px;
+        .item{
+            .heading{ 
+                border-top: 1px solid rgb(189, 189, 189);
+                border-bottom: 1px solid rgb(189, 189, 189);
+                padding: 20px 6px;
+                display: flex;
+                cursor: pointer;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 3px;
+                    margin-right: 10px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+                img.active{
+                    transform: rotate(90deg);
+                }
+            }
+            .text{
+                padding: 0 10px;
+                overflow: hidden;
+                opacity: 0;
+                height: 0;
+                h5{
+                    font-size: 18px;
+                }
+            }
+            .text.active{
+                overflow: visible;
+                opacity: 1;  
+                height: 100%;
+              }
+        }
+    }
+}
